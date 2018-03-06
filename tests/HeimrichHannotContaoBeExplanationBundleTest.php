@@ -8,7 +8,6 @@
 
 namespace HeimrichHannot\BeExplanationBundle\Tests;
 
-use HeimrichHannot\BeExplanationBundle\DependencyInjection\HeimrichHannotContaoBeExplanationBundleExtension;
 use HeimrichHannot\BeExplanationBundle\HeimrichHannotContaoBeExplanationBundle;
 use PHPUnit\Framework\TestCase;
 
@@ -22,15 +21,5 @@ class HeimrichHannotContaoBeExplanationBundleTest extends TestCase
         $bundle = new HeimrichHannotContaoBeExplanationBundle();
 
         $this->assertInstanceOf(HeimrichHannotContaoBeExplanationBundle::class, $bundle);
-    }
-
-    /**
-     * Tests the getContainerExtension() method.
-     */
-    public function testReturnsTheContainerExtension()
-    {
-        $bundle = new HeimrichHannotContaoBeExplanationBundle();
-
-        $this->assertInstanceOf(HeimrichHannotContaoBeExplanationBundleExtension::class, $bundle->getContainerExtension());
     }
 }
