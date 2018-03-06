@@ -1,23 +1,17 @@
 <?php
 
-/**
- * Contao Open Source CMS
+/*
+ * Copyright (c) 2018 Heimrich & Hannot GmbH
  *
- * Copyright (c) Heimrich & Hannot GmbH
- *
- * @package be_explanation
- * @author  Dennis Patzer
- * @license http://www.gnu.org/licences/lgpl-3.0.html LGPL
+ * @license LGPL-3.0-or-later
  */
 
 namespace HeimrichHannot\BeExplanationBundle;
-
 
 use Contao\Widget;
 
 class ExplanationField extends Widget
 {
-
     protected $strTemplate = 'be_explanation';
 
     public function generate()
