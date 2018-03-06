@@ -1,3 +1,8 @@
+![](https://img.shields.io/packagist/v/heimrichhannot/contao-be_explanation-bundle.svg)
+![](https://img.shields.io/packagist/dt/heimrichhannot/contao-be_explanation-bundle.svg)
+[![](https://img.shields.io/travis/heimrichhannot/contao-be_explanation-bundle/master.svg)](https://travis-ci.org/heimrichhannot/contao-be_explanation-bundle/)
+[![](https://img.shields.io/coveralls/heimrichhannot/contao-be_explanation-bundle/master.svg)](https://coveralls.io/github/heimrichhannot/contao-be_explanation-bundle)
+
 # Backend Explanation Bundle
 
 This bundle offers a simple backend explanation form field (inputType).
