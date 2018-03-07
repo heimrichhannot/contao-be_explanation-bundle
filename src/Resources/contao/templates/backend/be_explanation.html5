@@ -1,7 +1,7 @@
 <div id="ctrl_<?= $this->id ?>" class="be_explanation<?php if ($this->collapsible): ?> collapsible<?php endif; ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
     <?php if ($this->collapsible): ?>
-        <?php $strIntro = HeimrichHannot\Haste\Util\StringUtil::truncateHtml($this->text, 180); ?>
+        <?php $strIntro = \Contao\StringUtil::substrHtml($this->text, 180) ?>
         <span class="intro">
             <?= $strIntro ?>
         </span>

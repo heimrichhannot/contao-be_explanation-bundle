@@ -26,7 +26,7 @@
     "php": "^7.1",
     "contao/core-bundle": "^4.4",
     "contao-community-alliance/composer-plugin": "~2.4 || ~3.0",
-    "heimrichhannot/contao-haste_plus": "~1.0"
+    "heimrichhannot/contao-utils-bundle": "^1.0"
   },
   "require-dev": {
     "contao/test-case": "^1.1",
