@@ -8,13 +8,16 @@
 
 namespace HeimrichHannot\BeExplanationBundle;
 
-use Symfony\Component\DependencyInjection\ContainerBuilder;
+use HeimrichHannot\BeExplanationBundle\DependencyInjection\BeExplanationExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class HeimrichHannotContaoBeExplanationBundle extends Bundle
 {
-    public function build(ContainerBuilder $container)
+    /**
+     * @return BeExplanationExtension
+     */
+    public function getContainerExtension()
     {
-        parent::build($container);
+        return new BeExplanationExtension();
     }
 }
