@@ -1,7 +1,7 @@
 ![](https://img.shields.io/packagist/v/heimrichhannot/contao-be_explanation-bundle.svg)
 ![](https://img.shields.io/packagist/dt/heimrichhannot/contao-be_explanation-bundle.svg)
-[![](https://img.shields.io/travis/heimrichhannot/contao-be_explanation-bundle/master.svg)](https://travis-ci.org/heimrichhannot/contao-be_explanation-bundle/)
-[![](https://img.shields.io/coveralls/heimrichhannot/contao-be_explanation-bundle/master.svg)](https://coveralls.io/github/heimrichhannot/contao-be_explanation-bundle)
+[![Build Status](https://travis-ci.org/heimrichhannot/contao-be_explanation-bundle.svg?branch=master)](https://travis-ci.org/heimrichhannot/contao-be_explanation-bundle)
+[![Coverage Status](https://coveralls.io/repos/github/heimrichhannot/contao-be_explanation-bundle/badge.svg?branch=master)](https://coveralls.io/github/heimrichhannot/contao-be_explanation-bundle?branch=master)
 
 # Backend Explanation Bundle
 
