@@ -31,8 +31,9 @@ The callback gets the `$attributes` array from the widget constructar as paramet
 Example: 
 
 ```php
-public function textCallback(array $attributes){
+public function textCallback(array $attributes): string {
     $dc = $attributes["dataContainer"];
     $text = $attributes["text"];
+    return "My new text";
 }
 ```
