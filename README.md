@@ -14,11 +14,25 @@ Just add the field to some of your data container arrays as follows:
 ```
 $GLOBALS['TL_DCA']['tl_*']['fields']['myExplanation'] = array
 (
-    'inputType' => 'explanation',
+    'inputType' => 'explanation', //alias: huh_be_explanation
     'eval'      => array(
         'text'     => &$GLOBALS['TL_LANG']['tl_*']['myExplanation'], // this is a string, not an array
+        'text_callback' => ['service.name','textCallback'] // a callback to dynamical generate text
         'class'    => 'tl_info', // all contao message css classes are possible
         'tl_class' => 'long'
     )
 );
+```
+
+#### Text Callback
+
+The callback gets the `$attributes` array from the widget constructar as parameter, which containers the widget config and the current DataContainer.
+
+Example: 
+
+```php
+public function textCallback(array $attributes){
+    $dc = $attributes["dataContainer"];
+    $text = $attributes["text"];
+}
 ```
