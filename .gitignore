@@ -1,7 +1,11 @@
-vendor
 .idea
-composer.lock
 Thumbs.db
 .DS_Store
 .sass-cache
-component
+/vendor
+/component
+composer.lock
+composer.json~
+/lib
+node_modules
+package-lock.json

@@ -43,6 +43,9 @@
     "contao/core": "*",
     "contao/manager-plugin": "<2.0 || >=3.0"
   },
+  "replace": {
+    "heimrichhannot/contao-be_explanation": "*"
+  },
   "autoload": {
     "psr-4": {
       "HeimrichHannot\\BeExplanationBundle\\": "src/"

@@ -1,11 +1,22 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] - 2018-06-06
+
+### Removed
+- javascript dependency for jQuery in the backend
+
+### Changed
+- refactored javascript paths
+
+### Added
+- "replace" entry for composer.json in order to replace old "contao-be_explanation" which is abandoned
+
 ## [2.1.0] - 2018-06-06
 
-#### Added
-* text callback
-* alias for inputType
+### Added
+- text callback
+- alias for inputType
 
 ## [2.0.0] - 2018-05-24
 
