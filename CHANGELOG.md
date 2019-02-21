@@ -1,7 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [2.2.0] - 2018-06-06
+## [2.2.1] - 2019-02-21
+
+### Fixed
+- image paths
+- console.log()
+
+## [2.2.0] - 2019-02-21
 
 ### Removed
 - javascript dependency for jQuery in the backend
