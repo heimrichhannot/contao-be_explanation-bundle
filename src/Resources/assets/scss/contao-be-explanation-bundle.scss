@@ -1,5 +1,6 @@
 .be_explanation {
     margin-top: 15px;
+    font-size: .875rem !important;
 
     .intro {
         display: inline;
@@ -11,7 +12,7 @@
 
     .toggle {
         background-repeat: no-repeat;
-        background: url(/bundles/heimrichhannotcontaobeexplanation/img/open.png);
+        background: url('../img/open.png');
         width: 16px;
         height: 16px;
         cursor: pointer;
@@ -24,15 +25,11 @@
         }
 
         .toggle {
-            background-image: url(/bundles/heimrichhannotcontaobeexplanation/img/close.png);
+            background-image: url('../img/close.png');
         }
 
         .collapse {
             display: inline;
         }
     }
-}
-
-.isContao4 .be_explanation {
-    font-size: .875rem !important;
 }

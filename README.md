@@ -11,17 +11,17 @@ This bundle offers a simple backend explanation form field (inputType).
 
 Just add the field to some of your data container arrays as follows:
 
-```
-$GLOBALS['TL_DCA']['tl_*']['fields']['myExplanation'] = array
-(
-    'inputType' => 'explanation', //alias: huh_be_explanation
-    'eval'      => array(
-        'text'     => &$GLOBALS['TL_LANG']['tl_*']['myExplanation'], // this is a string, not an array
-        'text_callback' => ['service.name','textCallback'] // a callback to dynamical generate text
-        'class'    => 'tl_info', // all contao message css classes are possible
-        'tl_class' => 'long'
-    )
-);
+```php
+$GLOBALS['TL_DCA']['tl_table']['fields']['myExplanation'] = [
+    'inputType' => 'explanation',
+    'eval'      => [
+        'text'          => &$GLOBALS['TL_LANG']['tl_table']['explanation']['myExplanation'], // this is a string, not an array
+        'text_callback' => [\AppBundle\EventListener\Dca\TableListener::class, 'onTextCallback'], // a callback to dynamical generate text
+        'class'         => 'tl_info', // all contao message css classes are possible
+        'tl_class'      => 'long',
+        'collapsible'   => true // If text is to long, if will be collapsed
+    ]
+];
 ```
 
 #### Text Callback

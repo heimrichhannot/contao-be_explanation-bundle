@@ -5,12 +5,10 @@
         <span class="intro">
             <?= $strIntro ?>
         </span>
-
-        <div class="toggle"></div>
-
         <span class="collapse">
-            <?= str_replace($strIntro, '', $this->text) ?>
+            <?= $this->text ?>
         </span>
+        <div class="toggle"></div>
     <?php else: ?>
         <?= $this->text ?>
     <?php endif; ?>

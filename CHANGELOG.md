@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.3.0] - 2020-04-06
+- updated asset generation to encore
+- assets now added in widget, not in config
+- updated composer.json
+- fixed various display errors in contao 4.9
+- fixed open collapse not showing full text
+
 ## [2.2.1] - 2019-02-21
 
 ### Fixed

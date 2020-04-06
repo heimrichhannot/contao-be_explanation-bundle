@@ -24,8 +24,7 @@
   },
   "require": {
     "php": "^7.1",
-    "contao/core-bundle": "^4.4",
-    "heimrichhannot/contao-utils-bundle": "^2.0"
+    "contao/core-bundle": "^4.4"
   },
   "require-dev": {
     "contao/test-case": "^1.1",
@@ -49,16 +48,7 @@
   "autoload": {
     "psr-4": {
       "HeimrichHannot\\BeExplanationBundle\\": "src/"
-    },
-    "classmap": [
-      "src/"
-    ],
-    "exclude-from-classmap": [
-      "src/Resources/contao/config/",
-      "src/Resources/contao/dca/",
-      "src/Resources/contao/languages/",
-      "src/Resources/contao/templates/"
-    ]
+    }
   },
   "autoload-dev": {
     "psr-4": {

@@ -1,4 +1,5 @@
-import { utilsBundle } from '@hundh/contao-utils-bundle';
+import { EventUtil } from '@hundh/contao-utils-bundle';
+import '../scss/contao-be-explanation-bundle.scss'
 
 class BeExplanationBundle {
     static onReady() {
@@ -6,7 +7,7 @@ class BeExplanationBundle {
     }
 
     static initCollapsibles() {
-        utilsBundle.event.addDynamicEventListener('click', '.be_explanation .toggle', function(target) {
+        EventUtil.addDynamicEventListener('click', '.be_explanation .toggle', function(target) {
             let classList = target.parentNode.classList;
 
             if (classList.contains('open'))
