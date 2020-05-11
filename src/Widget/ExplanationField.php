@@ -20,9 +20,11 @@ class ExplanationField extends Widget
     public function __construct(array $attributes = null)
     {
         parent::__construct($attributes);
+
         if (isset($attributes['text_callback']) && \is_array($callback = $attributes['text_callback'])) {
             $this->text = System::importStatic($callback[0])->{$callback[1]}($attributes);
         }
+
         if (isset($attributes['collapsible']) && true === $attributes['collapsible']) {
             $this->collapsible = true;
         }
@@ -44,6 +46,7 @@ class ExplanationField extends Widget
     {
         if ('BE' === TL_MODE) {
             $GLOBALS['TL_CSS']['be_explanation'] = 'bundles/heimrichhannotcontaobeexplanation/assets/contao-be-explanation-bundle.css|static';
+
             if ($this->collapsible) {
                 $GLOBALS['TL_JAVASCRIPT']['be_explanation'] = 'bundles/heimrichhannotcontaobeexplanation/assets/contao-be-explanation-bundle.js|static';
             }
