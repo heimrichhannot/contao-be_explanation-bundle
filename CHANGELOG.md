@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.3.1] - 2020-05-11
+
+- fixed namespace issue
+
 ## [2.3.0] - 2020-04-06
 - updated asset generation to encore
 - assets now added in widget, not in config

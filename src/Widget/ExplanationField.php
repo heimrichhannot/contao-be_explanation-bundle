@@ -1,12 +1,12 @@
 <?php
 
 /*
- * Copyright (c) 2019 Heimrich & Hannot GmbH
+ * Copyright (c) 2020 Heimrich & Hannot GmbH
  *
  * @license LGPL-3.0-or-later
  */
 
-namespace HeimrichHannot\BeExplanationBundle;
+namespace HeimrichHannot\BeExplanationBundle\Widget;
 
 use Contao\System;
 use Contao\Widget;
@@ -34,7 +34,7 @@ class ExplanationField extends Widget
     }
 
     /**
-     * Parse the template file and return it as string
+     * Parse the template file and return it as string.
      *
      * @param array $arrAttributes An optional attributes array
      *
@@ -48,8 +48,7 @@ class ExplanationField extends Widget
                 $GLOBALS['TL_JAVASCRIPT']['be_explanation'] = 'bundles/heimrichhannotcontaobeexplanation/assets/contao-be-explanation-bundle.js|static';
             }
         }
+
         return parent::parse($arrAttributes);
     }
-
-
 }
