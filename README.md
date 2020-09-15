@@ -18,7 +18,7 @@ $GLOBALS['TL_DCA']['tl_table']['fields']['myExplanation'] = [
         'text'          => &$GLOBALS['TL_LANG']['tl_table']['explanation']['myExplanation'], // this is a string, not an array
         'text_callback' => [\AppBundle\EventListener\Dca\TableListener::class, 'onTextCallback'], // a callback to dynamical generate text
         'class'         => 'tl_info', // all contao message css classes are possible
-        'tl_class'      => 'long',
+        'tl_class'      => 'w50 long',
         'collapsible'   => true // If text is to long, if will be collapsed
     ]
 ];
