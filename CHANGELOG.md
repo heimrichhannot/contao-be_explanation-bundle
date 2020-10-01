@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.3.3] - 2020-10-01
+
+- fixed label issue in contao 4.9
+
 ## [2.3.2] - 2020-09-15
 
 - fixed README.md

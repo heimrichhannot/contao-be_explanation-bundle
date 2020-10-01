@@ -1,35 +1,39 @@
 .be_explanation {
-    margin-top: 15px;
-    font-size: .875rem !important;
+  margin-top: 15px;
+  font-size: .875rem !important;
 
+  & + .tl_help.tl_tip {
+    display: none;
+  }
+
+  .intro {
+    display: inline;
+  }
+
+  .collapse {
+    display: none;
+  }
+
+  .toggle {
+    background-repeat: no-repeat;
+    background: url('../img/open.png');
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    float: right;
+  }
+
+  &.open {
     .intro {
-        display: inline;
-    }
-
-    .collapse {
-        display: none;
+      display: none;
     }
 
     .toggle {
-        background-repeat: no-repeat;
-        background: url('../img/open.png');
-        width: 16px;
-        height: 16px;
-        cursor: pointer;
-        float: right;
+      background-image: url('../img/close.png');
     }
 
-    &.open {
-        .intro {
-            display: none;
-        }
-
-        .toggle {
-            background-image: url('../img/close.png');
-        }
-
-        .collapse {
-            display: inline;
-        }
+    .collapse {
+      display: inline;
     }
+  }
 }
