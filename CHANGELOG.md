@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.4.0] - 2021-08-31
+
+- Added: php8 support
+
 ## [2.3.3] - 2020-10-01
 
 - fixed label issue in contao 4.9
