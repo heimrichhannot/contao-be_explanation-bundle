@@ -16,10 +16,11 @@ use HeimrichHannot\BeExplanationBundle\HeimrichHannotContaoBeExplanationBundle;
 
 class Plugin implements BundlePluginInterface
 {
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(HeimrichHannotContaoBeExplanationBundle::class)->setLoadAfter([ContaoCoreBundle::class]),
+            BundleConfig::create(HeimrichHannotContaoBeExplanationBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 }
