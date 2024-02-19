@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## prepare [2.5.0] - YYYY-MM-DD
+- Added: support for Contao 5
+
 ## [2.4.0] - 2021-08-31
 
 - Added: php8 support
