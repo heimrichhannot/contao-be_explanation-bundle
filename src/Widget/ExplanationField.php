@@ -8,14 +8,17 @@
 
 namespace HeimrichHannot\BeExplanationBundle\Widget;
 
+use AllowDynamicProperties;
+use Contao\CoreBundle\Routing\ScopeMatcher;
 use Contao\System;
 use Contao\Widget;
 
+#[AllowDynamicProperties]
 class ExplanationField extends Widget
 {
     protected $strTemplate = 'be_explanation';
 
-    protected $collapsible = false;
+    protected bool $collapsible = false;
 
     public function __construct(array $attributes = null)
     {
@@ -34,7 +37,7 @@ class ExplanationField extends Widget
         }
     }
 
-    public function generate()
+    public function generate(): string
     {
         return $this->parse();
     }
@@ -46,9 +49,13 @@ class ExplanationField extends Widget
      *
      * @return string The template markup
      */
-    public function parse($arrAttributes = null)
+    public function parse($arrAttributes = null): string
     {
-        if ('BE' === TL_MODE) {
+        $scopeMatcher = static::getContainer()->get(ScopeMatcher::class);
+        $request = static::getContainer()->get('request_stack')->getCurrentRequest();
+
+        if ($scopeMatcher && $scopeMatcher->isBackendRequest($request))
+        {
             $GLOBALS['TL_CSS']['be_explanation'] = 'bundles/heimrichhannotcontaobeexplanation/assets/contao-be-explanation-bundle.css|static';
 
             if ($this->collapsible) {
