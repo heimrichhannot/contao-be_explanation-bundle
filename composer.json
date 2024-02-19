@@ -23,8 +23,8 @@
     "issues": "https://github.com/heimrichhannot/contao-be_explanation-bundle/issues"
   },
   "require": {
-    "php": "^7.1|^8.0",
-    "contao/core-bundle": "^4.4"
+    "php": "^7.1 || ^8.0",
+    "contao/core-bundle": "^4.9 || ^5.0"
   },
   "require-dev": {
     "contao/test-case": "^1.1",
