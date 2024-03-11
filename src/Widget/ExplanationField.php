@@ -51,7 +51,7 @@ class ExplanationField extends Widget
      */
     public function parse($arrAttributes = null): string
     {
-        $scopeMatcher = static::getContainer()->get(ScopeMatcher::class);
+        $scopeMatcher = static::getContainer()->get('contao.routing.scope_matcher');
         $request = static::getContainer()->get('request_stack')->getCurrentRequest();
 
         if ($scopeMatcher && $scopeMatcher->isBackendRequest($request))
