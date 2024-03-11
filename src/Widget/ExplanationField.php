@@ -21,8 +21,12 @@ class ExplanationField extends Widget
     {
         parent::__construct($attributes);
 
-        if (isset($attributes['text_callback']) && \is_array($callback = $attributes['text_callback'])) {
-            $this->text = System::importStatic($callback[0])->{$callback[1]}($attributes);
+        if ($callback = ($attributes['text_callback'] ?? null)) {
+            if (\is_callable($callback)) {
+                $this->text = $callback($attributes);
+            } elseif (\is_array($callback)) {
+                $this->text = System::importStatic($callback[0])->{$callback[1]}($attributes);
+            }
         }
 
         if (isset($attributes['collapsible']) && true === $attributes['collapsible']) {
