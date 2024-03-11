@@ -14,11 +14,4 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class HeimrichHannotContaoBeExplanationBundle extends Bundle
 {
-    /**
-     * @return BeExplanationExtension
-     */
-    public function getContainerExtension(): ?ExtensionInterface
-    {
-        return new BeExplanationExtension();
-    }
 }
