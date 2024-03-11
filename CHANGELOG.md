@@ -1,8 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## prepare [2.5.0] - YYYY-MM-DD
-- Added: support for Contao 5
+## [2.5.0] - 2024-03-11
+- Added: support for Contao 5 ([#3](https://github.com/heimrichhannot/contao-be_explanation-bundle/pull/3))
+- Added: support for callable to text_callback ([#2](https://github.com/heimrichhannot/contao-be_explanation-bundle/pull/2), [@fritzmg](https://github.com/fritzmg))
+- Changed: a lot of internal cleanup and restructuring
 
 ## [2.4.0] - 2021-08-31
 
